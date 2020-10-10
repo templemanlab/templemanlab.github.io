@@ -29,7 +29,7 @@
   <body>
 
 
-<div class="fixed w-full top-0">
+<div class="fixed w-full top-0 z-10">
   <div x-data="{ mobileMenuOpen: false }" class="relative bg-uvic-dark-blue shadow">
     <div class="relative p-6">
       <div class="max-w-screen-xl mx-auto px-2 sm:px-4">
@@ -58,7 +58,7 @@
         </nav>
       </div>
 
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden z-10" x-show="mobileMenuOpen" x-description="Mobile menu, show/hide based on menu open state." x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
+      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden" x-show="mobileMenuOpen" x-description="Mobile menu, show/hide based on menu open state." x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95">
         <div class="rounded-lg shadow-md">
           <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
             <div class="px-5 pt-4 flex items-center justify-between">
